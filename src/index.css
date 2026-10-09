@@ -1,0 +1,76 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 320px;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #378add;
+  outline-offset: 2px;
+}
+
+@media (max-width: 560px) {
+  .app-shell {
+    width: 100%;
+    padding: 1rem 0.75rem !important;
+  }
+
+  .stat-grid {
+    gap: 8px !important;
+  }
+
+  .tab-bar {
+    gap: 2px !important;
+  }
+
+  .tab-bar button {
+    min-height: 40px;
+    padding: 7px 3px !important;
+    font-size: 11px !important;
+  }
+
+  .task-row {
+    gap: 10px !important;
+    padding: 12px !important;
+  }
+
+  .edit-row,
+  .add-task-row {
+    flex-wrap: wrap;
+  }
+
+  .edit-row input,
+  .add-task-row input {
+    min-width: 0;
+    flex: 1 1 100% !important;
+  }
+
+  .edit-row button,
+  .add-task-row button {
+    flex: 1;
+  }
+}
+
+@media (min-width: 700px) {
+  .app-shell {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+}
